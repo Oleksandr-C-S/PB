@@ -1,0 +1,14 @@
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\bin\Debug\net10.0\Iterators.exe
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\bin\Debug\net10.0\Iterators.deps.json
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\bin\Debug\net10.0\Iterators.runtimeconfig.json
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\bin\Debug\net10.0\Iterators.dll
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\bin\Debug\net10.0\Iterators.pdb
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.AssemblyInfoInputs.cache
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.AssemblyInfo.cs
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.csproj.CoreCompileInputs.cache
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.dll
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\refint\Iterators.dll
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.pdb
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\Iterators.genruntimeconfig.cache
+C:\Mein Data\Programming\С#\Labki\LabkaOne\Iterators\obj\Debug\net10.0\ref\Iterators.dll
