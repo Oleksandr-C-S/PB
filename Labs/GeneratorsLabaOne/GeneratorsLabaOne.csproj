@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>GeneratorsLabaOne</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Oleksandr-C-S</Authors>
+    <Description>Generators and Iterators library</Description>
+    <RepositoryUrl>https://github.com/Oleksandr-C-S/PB</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
