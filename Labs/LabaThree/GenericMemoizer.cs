@@ -21,7 +21,19 @@ public class GenericMemoizer<T, TResult>{
         
     }
 
-
+public TResult Invoke(T arg)
+    {
+        if(_cache.TryGetValue(arg, out var result))
+        return result;
+        result = _func(arg);
+    if (_cache.Count >= _capacity)
+        {
+            var keyToRemove =_evictStrategy(_cache);
+            _cache.Remove(keyToRemove);
+        }
+        _cache[arg] = result;
+        return result;
+    }
 
     
 }
