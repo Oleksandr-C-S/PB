@@ -1,4 +1,6 @@
 using PB.Labs.GeneratorsLabaOne;
+using PB.Labs.LabaThree;
+
 using System;
 
 namespace PB
