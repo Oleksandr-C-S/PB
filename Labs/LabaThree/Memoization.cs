@@ -12,7 +12,7 @@ public static class Memoization
 
         return arg =>
         {
-            if (cache.TryGetValue(ArrayBufferWriter, out var result))
+            if (cache.TryGetValue(arg, out var result))
             return result;
 
             result = func(arg);
