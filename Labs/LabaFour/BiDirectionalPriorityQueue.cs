@@ -57,5 +57,53 @@ public BiDirectionalPriorityQueue()
             while (list.Count >0 && !valid[list.Last.Value.id])
             list.RemoveLast();
         }
+public T Dequeue(string mode)
+        {
+            
+        
+int id;
+T item;
+switch (mode.ToLower())
+            {
+                case "highest":
+                CleanMaxHeap();
+                if(maxHeap.Count == 0)return default;
+                var max = maxHeap.Dequeue();
+                id = max.id;
+                item = max.item;
+                break;
+
+                case "lowest":
+                CleanMinHeap();
+                if(minHeap.Count == 0)return default;
+                var min = minHeap.Dequeue();
+                id = min.id;
+                item = min.item;
+                break;
+                
+                case "oldest":
+                CleanFront();
+                if(list.Count == 0)return default;
+                var first = list.First.Value();
+                list.RemoveFirst();
+                id = first.id;
+                item = first.item;
+                break;
+                
+                case "newest":
+                CleanBack();
+                if (list.Count == 0) return default;
+                var last = list.Last.Value;
+                list.RemoveLast();
+                id = last.id;
+                item = last.item;
+                break;
+                default:
+                throw new ArgumentException("Неправильний режим");
+            
+            }
+            valid[id] = false;
+            return item;
+        }
 }
 }
