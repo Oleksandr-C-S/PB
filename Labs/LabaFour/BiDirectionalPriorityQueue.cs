@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using PB.Labs.BiDirectionalPriorityQueue;
 namespace PB.Labs.BiDirectionalPriorityQueue{
 public class BiDirectionalPriorityQueue<T>
 {
@@ -105,5 +106,47 @@ switch (mode.ToLower())
             valid[id] = false;
             return item;
         }
+
+        public T Peek(string mode)
+        {
+            switch(mode.ToLower()){
+            case "highest":
+            CleanMaxHeap();
+            return maxHeap.Count > 0? maxHeap.Peak().item:default;
+
+             case "lowest":
+            CleanMinHeap();
+            return minHeap.Count > 0? minHeap.Peak().item:default;
+
+
+            case "oldest":
+            CleanFront();
+            return list.Count > 0? list.First.Value().item:default;
+
+            
+            case "newest":
+            CleanBack();
+            return list.Count > 0? list.Peak().item:default;
+            default:
+            throw new ArgumentException("Неправильний режим");
+        }
 }
+}
+}
+class Program
+{
+    static void Main()
+    {
+        var pq = new BiDirectionalPriorityQueue<string>();
+        pq.Enqueue("A", 5);
+        pq.Enqueue("B", 1);
+        pq.Enqueue("C", 10);
+
+        Console.WriteLine("Високий пріорітет: "+ pq.Peek("highest"));
+        Console.WriteLine("Низький пріорітет: "+ pq.Peek("lowest"));
+        Console.WriteLine("Старий пріорітет: "+ pq.Peek("oldest"));
+        Console.WriteLine("Новий пріорітет: "+ pq.Peek("newest"));
+        Console.WriteLine("Видалення (highest): "+ pq.Dequeue("highest"));
+        Console.WriteLine("Видалення (oldest): "+ pq.Dequeue("oldest"));
+    }
 }
