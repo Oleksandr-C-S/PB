@@ -31,6 +31,17 @@ class AsyncFilter
     await Task.Delay(1500);
 
     //Task version
+    Console.WriteLine("Task version");
 
+    var resultAsync = await AsyncFilter.FilterAsync(
+        numbers,
+        async num =>
+        {
+            await Task.Delay(100);
+            return num % 2 == 0;
+        }
+    );
+    Console.WriteLine("Result " + string.Join(", ", resultAsync));
+    
     }
 }
